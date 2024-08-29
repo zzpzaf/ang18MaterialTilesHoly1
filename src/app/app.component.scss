@@ -1,0 +1,89 @@
+
+
+.grid-container {
+  height: 100%; 
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, aside, main, footer {
+    padding-inline: var(--allPadding);
+}
+
+header {
+  grid-area: header;
+  background-color: dodgerblue;
+}
+
+nav {
+  grid-area: nav;
+  background-color: lightskyblue;
+}
+
+aside.left {
+  grid-area: left;
+  background-color: lightpink;
+}
+
+main {
+  grid-area: main;
+  background-color: lightgray;
+}
+
+aside.right {
+  grid-area: right;
+  background-color: lightgoldenrodyellow;
+}
+
+footer {
+  grid-area: footer;
+  background-color: lightseagreen;
+}
+
+@media (min-width: 320px) {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "left"
+        "main"
+        "right"
+        "footer";
+      grid-template-columns: 1fr;   // setting columns width
+      //grid-template-rows: 60px min-content 1fr 1.7fr min-content min-content;
+      grid-template-rows: var(--hhSmall) var(--nrhSmall) var(--lphSmall) var(--mhSmall) var(--rphSmall) var(--fhSmall);  // setting rows height
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "nav nav"
+        "left main"
+        "right right"
+        "footer footer";
+      // grid-template-columns: max(200px, 20%) 1fr;
+      grid-template-columns: max(var(--lpw1Medium), var(--lpw2Medium)) 1fr; // setting columns width
+      // grid-template-rows: 70px 40px 1fr 10% 50px;
+      grid-template-rows: var(--hhMedium) var(--nrhMedium) 1fr var(--rphMedium) var(--fhMedium);  // setting rows height
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "left main right"
+        "footer footer footer";
+      // grid-template-columns: max(200px, 25%) 1fr min-content; 
+      grid-template-columns: max(var(--lpw1Large), var(--lpw2Large)) 1fr var(--rpwLarge);  // setting columns width
+      // grid-template-rows: 80px 50px 1fr 60px; 
+      grid-template-rows: var(--hhLarge) var(--nrhLarge) 1fr var(--fhLarge); // setting rows height
+    }
+  }

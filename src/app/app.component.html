@@ -1,0 +1,26 @@
+<div class="grid-container" [style]="layoutConfigStyle">
+  <header>
+    <app-header></app-header>
+  </header>
+
+  <nav>
+    <app-navrow></app-navrow>
+    <router-outlet />
+  </nav>
+
+  <aside class="left">
+    <app-leftpane></app-leftpane>
+  </aside>
+
+  <main>
+    <app-main></app-main>
+  </main>
+
+  <aside class="right">
+    <app-rightpane></app-rightpane>
+  </aside>
+
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</div>
