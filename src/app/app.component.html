@@ -1,17 +1,14 @@
 
 <mat-grid-list cols="12" rowHeight="4.55vh" gutterSize="0px">
-
   @for (tile of tiles; track $index) {
   <mat-grid-tile
     [colspan]="tile.cols"
     [rowspan]="tile.rows"
     [style.background]="tile.color"
   >
-    <ng-container
-      addCompDyn [compToken]="tile.text"
-    >
-    </ng-container>
+    <span class="tile-container">
+      <ng-container addCompDyn [compToken]="tile.text"> </ng-container>
+    </span>
   </mat-grid-tile>
   }
-  
 </mat-grid-list>

@@ -1,1 +1,36 @@
-<p>leftpane works!</p>
+<!-- <p>leftpane works!</p> -->
+<mat-card class="matlist" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>Articles</mat-card-title>
+  </mat-card-header>
+  <!-- <mat-divider></mat-divider> -->
+  <mat-card-content>
+    <mat-action-list>
+      <div class="matlist">
+        @for (item of listItems; track $index) {
+        <span>
+          <button
+            mat-list-item
+            [ngClass]="{ 'selected-item': selectedItem === $index }"
+            (click)="itemClicked(item, $index)"
+          >
+            {{ item.articleTitle }}
+          </button>
+        </span>
+        }
+      </div>
+    </mat-action-list>
+  </mat-card-content>
+  <!-- <mat-divider></mat-divider> -->
+  <div>
+  <mat-card-footer >
+    <!-- <button (click)="addArticle()">Add Article</button> -->
+    <!-- {{listItems[selectedItem].articleTitle}} -->
+    {{
+      selectedItem !== null
+        ? listItems[selectedItem].articleTitle
+        : "No article selected"
+    }}
+  </mat-card-footer>
+</div>
+</mat-card>

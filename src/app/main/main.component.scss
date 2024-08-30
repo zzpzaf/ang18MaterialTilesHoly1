@@ -1,0 +1,31 @@
+mat-card {
+  height: 100%;
+  border-radius: 0px !important;
+}
+mat-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   height: 100%;
+  color: burlywood;
+}
+mat-card-subtitle {
+  display: flex;
+  //   justify-content: center;
+  align-items: center;
+  color: rgb(133, 193, 181);
+}
+mat-card-content {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  height: 100%;
+  color: lightgray;
+}
+mat-divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(133, 193, 181);
+}

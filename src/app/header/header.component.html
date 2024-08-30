@@ -1,4 +1,13 @@
-<div  class="header-container">
-    <img width="192" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Angular_Logo_SVG.svg/512px-Angular_Logo_SVG.svg.png?20231112001847">
-    Header works!  - {{headerTitle}}
-</div>
+<mat-toolbar class="header-toolbar-container">
+    <mat-toolbar-row class="header-toolbar-row-container">
+      <a mat-button style="align-self: center" routerLink="/">
+        <mat-icon matListItemIcon>home</mat-icon>
+      </a>
+      <img class = "logo-image"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Angular_Logo_SVG.svg/512px-Angular_Logo_SVG.svg.png?20231112001847"
+      />
+      <span class="header-app-title">
+        {{ headerTitle }}
+      </span>
+    </mat-toolbar-row>
+  </mat-toolbar>

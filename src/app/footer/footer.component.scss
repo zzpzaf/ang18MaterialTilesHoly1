@@ -1,0 +1,42 @@
+
+.footer-toolbar-container {
+    display: flex;
+    flex-direction: column;
+    // padding-top: 10px;
+    width: 100%;
+    height: 100%; 
+    // overflow: auto;
+    justify-content:center; 
+    align-items: center;
+
+}
+
+
+.navrow-toolbar-row-container {
+    display: flex;
+    // width: 100%;
+    // height: 100%; 
+    flex-direction: row;
+    justify-content:center; 
+    // column-gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    // overflow: auto;
+    // line-height: inherit;
+    
+}
+
+.copyright-container {
+    display:flex;
+    // align-items: center;
+    // justify-content:space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size:medium;
+    color:rgb(133, 193, 181);
+    gap: 10px;
+}
+
+// .navrow-item-spacer {
+//     flex: 1 1 auto;
+// } 

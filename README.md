@@ -2,7 +2,19 @@
 
 ### An Angular Holy-Grail layout implementation, based on Material Grid List
 
+This is the project's output:
+![Angular-holy-grail-mat-grid-list](https://github.com/user-attachments/assets/5a8dc394-7945-4850-9129-2934d1ebdcd8)
 
+
+You can find the project's discription for its step by step implementation, at the following sites/blogs:
+
+1. Medium
+[My Profile](https://medium.com/@zzpzaf.se)
+2. devXperiences
+[My own blog site](https://www.devxperiences.com)
+
+
+---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
 The [Angular Material](https://material.angular.io/) 18.1.2 has been also installed.
