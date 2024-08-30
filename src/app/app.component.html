@@ -33,7 +33,7 @@
   <!-- </mat-grid-tile> -->
 
 
-  @for (tile of tiles; track tile) {
+  @for (tile of tiles; track tile.text) {
     <mat-grid-tile
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
