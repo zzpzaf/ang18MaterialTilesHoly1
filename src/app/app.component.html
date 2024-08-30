@@ -1,43 +1,45 @@
+
+
 <mat-grid-list cols="12" rowHeight="9.1vh" gutterSize="0px">
-  <mat-grid-tile colspan="12" rowspan="1" style="background-color: dodgerblue">
+    
+  <!-- <mat-grid-tile colspan="12" rowspan="1" style="background-color: dodgerblue"> -->
     <!-- Header -->
-    <app-header></app-header>
-  </mat-grid-tile>
+        <!-- <app-header"></app-header> -->
+  <!-- </mat-grid-tile> -->
 
-  <mat-grid-tile
-    colspan="12"
-    rowspan="1"
-    style="background-color: lightskyblue"
-  >
+  <!-- <mat-grid-tile colspan="12" rowspan="1" style="background-color: lightskyblue"> -->
     <!-- NavBar -->
-    <app-navrow></app-navrow>
-  </mat-grid-tile>
+        <!-- <app-navrow"></app-navrow> -->
+  <!-- </mat-grid-tile> -->
 
-  <mat-grid-tile colspan="2" rowspan="8" style="background-color: lightpink">
+  <!-- <mat-grid-tile colspan="2" rowspan="8" style="background-color: lightpink"> -->
     <!-- Leftpane -->
-    <app-leftpane></app-leftpane>
-  </mat-grid-tile>
+        <!-- <app-leftpane></app-leftpane>  -->
+  <!-- </mat-grid-tile> -->
 
-  <mat-grid-tile colspan="9" rowspan="8" style="background-color: lightgray">
+  <!-- <mat-grid-tile colspan="9" rowspan="8" style="background-color: lightgray"> -->
     <!-- Main -->
-    <app-main></app-main>
-  </mat-grid-tile>
+        <!-- <app-main></app-main> -->
+  <!-- </mat-grid-tile> -->
 
-  <mat-grid-tile
-    colspan="1"
-    rowspan="8"
-    style="background-color: lightgoldenrodyellow"
-  >
+  <!-- <mat-grid-tile colspan="1" rowspan="8" style="background-color: lightgoldenrodyellow"> -->
     <!-- Rightpane -->
-    <app-rightpane></app-rightpane>
-  </mat-grid-tile>
+        <!-- <app-rightpane></app-rightpane> -->
+  <!-- </mat-grid-tile> -->
 
-  <mat-grid-tile
-    colspan="12"
-    rowspan="1"
-    style="background-color: lightseagreen"
-  >
+  <!-- <mat-grid-tile colspan="12" rowspan="1"  style="background-color: lightseagreen"> -->
     <!-- Footer -->
-    <app-footer></app-footer>
-  </mat-grid-tile>
+        <!-- <app-footer></app-footer> -->
+  <!-- </mat-grid-tile> -->
+
+
+  @for (tile of tiles; track tile) {
+    <mat-grid-tile
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  }
+
 </mat-grid-list>
