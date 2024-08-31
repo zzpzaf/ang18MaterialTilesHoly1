@@ -9,9 +9,9 @@ This is the project's output:
 You can find the project's discription for its step by step implementation, at the following sites/blogs:
 
 1. Medium
-[My Profile](https://medium.com/@zzpzaf.se)
+[Angular — Use Tiles to implement a Holy-Grail layout for your blog](https://medium.com/@zzpzaf.se/angular-use-tiles-to-implement-a-holy-grail-layout-for-your-blog-9f4beb61a697)
 2. devXperiences
-[My own blog site](https://www.devxperiences.com)
+[Angular — Use Tiles to implement a Holy-Grail layout for your blog](https://www.devxperiences.com/pzwp1/2024/08/31/angular-use-tiles-to-implement-a-holy-grail-layout/)
 
 
 ---
